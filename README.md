@@ -1,1 +1,21 @@
 # goBasic
+- If your own code or package is provided by 3rd parties you must create a work space.
+- A worspace is a directory hiearrchy that contains GO source code and the package objects and command binaries that compiler producces from the source code.
+- You can create a workspace anywhere in your system. 
+- Let's create a workspace now in a directory named "gocode".
+- Tell the go tool about that workspace set the *GOPATH* environment variable.
+  - `export GOPATH=$HOME/gocode`
+- Source code resides in **src** directory of our workspace.
+- Let's make a directory **src** and inside it.
+- We will create a namespace, a unique base path inside which all of your ***go code***  will reside.
+- I use the base path of my gitthub account github.com/example 
+  - **`cd gocode`**
+  - **`mkdir -p src/github.com/example`** 
+- We are now ready to write programm.
+- We will start with hello world command . So let's create a directory **hello** inside the namespace.
+  - **`cd src/github.com/example`**
+  - **`mkdir hello`**
+  - **`cd hello`**
+- Create a file named **hello.go**
+- We would add simple and standard hello world program inside hello.go .
+- Adding to main package is the convention that tells the go tool to **produce an executable command instead of a package object , that would be imported by other code.**
