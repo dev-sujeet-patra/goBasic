@@ -19,3 +19,12 @@
 - Create a file named **hello.go**
 - We would add simple and standard hello world program inside hello.go .
 - Adding to main package is the convention that tells the go tool to **produce an executable command instead of a package object , that would be imported by other code.**
+- Exiting the editor(vi) we can use go tool to build and install that binary.
+  - **`go install`**
+- If the go tool produces no output that means that command was a success.
+- The go tool (go install) installed it to the **`bin`** directory of workspace `gocode`.
+- Since we are going to install and run  a bunch of go program in the forseeable future.
+- It makes sense to add the bin directory to our system path.
+  - **` export PATH=$HOME/gocode/bin:$PATH `**
+- Lets create an ***package*** , are just like commands except they can be imported by other ***packages*** and have a *package name other than **'main'***.
+- We will start with simple string handling package.
