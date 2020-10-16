@@ -28,3 +28,14 @@
   - **` export PATH=$HOME/gocode/bin:$PATH `**
 - Lets create an ***package*** , are just like commands except they can be imported by other ***packages*** and have a *package name other than **'main'***.
 - We will start with simple string handling package.
+- Let's create a directory inside the namespace called string and in that directory we will create a file string.go.
+- String utility would have a simple function that reverses a string.
+- We start writing the function name begins as capital R, function is exportred .
+- import the string package in hello program.
+- Is there bug in our code somewhere? It could be but we have not write any test.
+- Let's write test for this for the 'String' utility package for Reverse function to make sure this is correct.
+- Test for a package live in that package directory in files that end in underscore test.
+- Go to string package.
+- Import **`testing`** package.
+- Find the attached program for better understanding of things to take care.
+- Run the test with command **`go test`** inside same testing package.
