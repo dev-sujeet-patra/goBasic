@@ -39,3 +39,7 @@
 - Import **`testing`** package.
 - Find the attached program for better understanding of things to take care.
 - Run the test with command **`go test`** inside same testing package.
+- Rns any functions begining with tests with Capital ***T*** .
+- To handle unicode charcter in Reverse a program, we shoudl have used **slice of runes** instead **slice of bytes**
+- **Runes are what go programmers called Unicode code points by changing the conversion to use a slice of runes, would handle any well formed utf-8 string we can throw at it**
+- 
